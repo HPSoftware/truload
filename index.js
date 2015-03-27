@@ -19,10 +19,11 @@
    grid.set(0, 1, 1, 1, contrib.line, 
      { style: 
        { line: "blue"
-       , text: "white"
+       , text: "green"
        , baseline: "black"}
      , xLabelPadding: 3
      , xPadding: 5
+     , showLegend: true
      , label: 'Hits'})
    
 
@@ -32,6 +33,9 @@ model.fetch(refresh)
 
 function refresh() {
 
+
+   var colors = ['red', 'blue', 'yellow', 'green', 'cyan', 'magneta', 'white']
+
    if (model.status.ui_status=="INITIALIZING") {      
          throw "test is still initializing..."
    }
@@ -39,11 +43,24 @@ function refresh() {
       var vusers = grid.get(0, 0)
       var hits = grid.get(0, 1)   
 
-      vusers.setData([{x: model.data.vusers[0].x, y: model.data.vusers[0].y, title: 'all'}])
-      hits.setData([{x: model.data.hits[0].x, y: model.data.hits[0].y}])         
+      var vusersData = []
+      var hitsData = []
+      for (var i=0; i<model.data.vusers.length; i++) {
+        vusersData.push( { x: model.data.vusers[i].x
+                   , y: model.data.vusers[i].y
+                   , title: model.data.vusers[i].specifics.geo_location
+                   , style: {line: colors[i%colors.length]}})
+        hitsData.push( { x: model.data.vusers[i].x
+                   , y: model.data.hits[i].y
+                   , title: model.data.hits[i].specifics.geo_location
+                   , style: {line: colors[i%colors.length]}})
+      }
+      vusers.setData(vusersData)
+      hits.setData(hitsData)
+
+      
    }
 
-   
    screen.key(['escape', 'q', 'C-c'], function(ch, key) {
      return process.exit(0);
    });
