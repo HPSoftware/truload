@@ -9,6 +9,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "async": "^0.9.0",
     "blessed": "0.0.51",
     "blessed-contrib": "git://github.com/yaronn/blessed-contrib.git#multi-line-chart",
     "optimist": "^0.6.1",
