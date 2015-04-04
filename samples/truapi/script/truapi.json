@@ -1,0 +1,28 @@
+{
+  "test": {
+    "script": "test.js"
+  },
+  "local": {
+    "vuserCount": 1,
+    "policy": {
+      "start": { "type": "allTogether" },
+      "duration": { "type": "iterationBased", "param": 1 },
+      "end": { "type": "allTogether" }
+    }
+  },
+  "remote": {
+    "vuserCount": 50,
+    "policy": {
+      "duration": 180,
+      "rampUp": 60,
+      "tearDown": 60,
+      "pacing": 1
+    },
+    "distribution": {
+      "aws-us-east-1": 50,
+      "aws-us-west-2": 50
+    }
+  },
+  "transactions": ["trans1", "yaron", "yaron1"]
+}
+
