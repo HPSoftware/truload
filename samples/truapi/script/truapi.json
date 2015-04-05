@@ -13,9 +13,9 @@
   "remote": {
     "vuserCount": 50,
     "policy": {
-      "duration": 180,
-      "rampUp": 60,
-      "tearDown": 60,
+      "duration": 30,
+      "rampUp": 30,
+      "tearDown": 30,
       "pacing": 1
     },
     "distribution": {
