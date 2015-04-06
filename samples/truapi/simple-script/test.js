@@ -1,5 +1,5 @@
 
-exports = module.exports = function (vuser) {
+module.exports = function (vuser) {
   /* init action */
   vuser.init('Base Vuser init', function (svc, done) {
     svc.logger.info('Vuser %s init', vuser.getVUserId());
@@ -8,7 +8,7 @@ exports = module.exports = function (vuser) {
 
   /* main action */
   vuser.action('Base Vuser action', function (svc, done) {
-    svc.logger.error('Vuser %s running', vuser.getVUserId());
+    svc.logger.error('The server has returned an HTTP 500 status', vuser.getVUserId());
 
     svc.transaction.start('tran1');
     svc.transaction.end('tran1', svc.transaction.PASS);

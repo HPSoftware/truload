@@ -1,6 +1,6 @@
 var r = require('request')
 
-exports = module.exports = function (vuser) {
+module.exports = function (vuser) {
 
   vuser.action('Flow', function (svc, done) {
     

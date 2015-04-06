@@ -10,7 +10,7 @@
       "end": { "type": "allTogether" }
     }
   },
-  "remote": {
+  "cloud": {
     "vuserCount": 50,
     "policy": {
       "duration": 30,
