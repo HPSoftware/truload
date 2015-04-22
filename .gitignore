@@ -2,4 +2,7 @@ node_modules
 npm-debug.log
 p.txt
 p.js
+*.csv
+*.log
+*.tgz
 
