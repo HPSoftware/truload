@@ -2,7 +2,7 @@
 
 Beautiful load testing in the terminal using ascii-art.
 
-<img src="./media/dashboard.png" width=200 alt="term" />
+<img src="./media/dashboard.png" width=800 alt="term" />
 
 * Author load tests with Node.JS
 * Use any IDE / source control
