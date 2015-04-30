@@ -110,11 +110,11 @@ Follow those steps to create your first TruLoad test:
     }
     `````
 
-    Here you define the test properties both locally (the "local" element) or on the cloud (the "cloud" element).
+    Here you define the test properties both for local runs and cloud runs.
 
-    vuserCount is number of virtual users to run.
+    `vuserCount` is number of virtual users to run.
 
-    You should also define the duration, ramp up, and tear down (values are in seconds).
+    You should also define the `duration`, `ramp up`, and `tear down` (values are in seconds). For cloud runs also define the distribution between various cloud providers and geogrpahies (values are in percents).
 
 5. First run this test locally:
 
