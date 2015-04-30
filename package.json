@@ -1,7 +1,7 @@
 {
   "name": "truload",
   "version": "1.0.0",
-  "description": "",
+  "description": "Beautiful load testing with ascii-art",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
