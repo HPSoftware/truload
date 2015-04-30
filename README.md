@@ -2,7 +2,7 @@
 
 Beautiful load testing in the terminal using ascii-art.
 
-Use as standalone or as a complement to the [StormRunner load testing](https://saas.hp.com/software/stormrunner-load) service.
+Use as standalone or as a complement to the [StormRunner load testing](https://saas.hp.com/software/stormrunner-load) service. More information in [blessed-contrib](https://github.com/yaronn/blessed-contrib) and [twitter](http://twitter.com/YaronNaveh).
 
 <img src="./media/dashboard.png" width=800 alt="term" />
 
