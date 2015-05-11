@@ -1,6 +1,6 @@
 {
   "name": "truload",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Beautiful load testing with ascii-art",
   "main": "index.js",
   "scripts": {
@@ -11,8 +11,8 @@
   "bin": "./index.js",
   "dependencies": {
     "async": "^0.9.0",
-    "blessed": "0.0.51",
-    "blessed-contrib": "^2.0.0",
+    "blessed": "0.1.54",
+    "blessed-contrib": "^2.0.5",
     "chalk": "^1.0.0",
     "optimist": "^0.6.1",
     "request": "^2.54.0"
