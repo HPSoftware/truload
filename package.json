@@ -1,6 +1,6 @@
 {
   "name": "truload",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Beautiful load testing with ascii-art",
   "main": "index.js",
   "scripts": {
